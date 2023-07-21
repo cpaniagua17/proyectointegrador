@@ -1,0 +1,75 @@
+*{
+  margin: 0%;
+  box-sizing: border-box;
+  font-family:"poppins", "belanosima", "sans serif";
+  font-weight: 100;
+ 
+}
+:root{
+  --negro:#181823; 
+  --naranja:#FC7300;
+  --blanco:#EFF5F5;
+  --petroleo:#1fba70;
+  --azul:#00425a;
+ }
+body{
+  background-color: var(--negro);
+  color: var(--petroleo);
+  font-size: 0.8rem;
+  padding:1rem ;
+}
+.contenedor{
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+
+}
+.tit{
+  text-align: center;
+  font-size: 1rem;
+}
+
+.contac-form{
+ padding: 10px;
+box-shadow: #1fba70;
+}
+
+.contac-info{
+background-color: #1fba70;
+color:var(--negro);
+text-decoration: none;
+margin-top: 2rem;
+}
+.contac-form p{
+  font-size: 2rem;
+  text-align: center;
+}
+h4{
+  font-size: 1rem;
+  text-align: center;
+  align-items: center;
+}
+
+
+h5{
+  font-size: 2rem;
+  text-align: center;
+  align-items: center;
+}
+form button, 
+form  input , 
+form textarea {
+  width: 100%;
+  padding:0.7rem;
+  border:none;
+  background: none;
+  border-bottom: 1px solid #1fba70;
+  outline: 0;
+  color: #1fba70;
+  font-weight: 400;
+  font-size: 1rem;
+}
+ul{
+  list-style: none;
+}
