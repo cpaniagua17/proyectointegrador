@@ -16,22 +16,33 @@
 header{
   background-color: var(--negro);
   display: flex;
-  justify-content: space-between;
+ justify-content: space-between;
   align-items: center;
  
   }
+  
  h3{
   color: var(--petroleo);
   font-size: 1rem;
 }
 header :hover{ 
-  color: #FC7300;
+  color:var(--naranja);
 }
-  .navbar-light .navbar-nav .nav-link {
+.navbar-toggler {
+  padding: var(--bs-navbar-toggler-padding-y) ;
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  background-color:var(--petroleo);
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
+}
+
+.navbar-light .navbar-nav .nav-link {
     color: var(--petroleo);
 }
 .nav-link{
-  color: #1fba70;
+  color:var(--petroleo);
 }
 
 
@@ -39,18 +50,18 @@ header :hover{
 
 .banner {
   width: 100%;
-  height: 26rem;
+  height: 30rem;
+  padding: 1rem;
   background-image: url(../imagen/estudiantes.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-   
-  backdrop-filter:var(--negro);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   
 }
+
 h1 {
   width: 90%;
   padding: 1rem;
@@ -73,20 +84,18 @@ h1 {
   height: auto;
   padding: 1rem;
   width: 90%;
-  margin: 10px 10px auto; 
+  margin: 1rem auto; 
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align:center;
   align-items: center ;
  
 }
-.seccion-1,
-.seccion-2,
-.seccion-3,
-.seccion-4 {
+article {
   margin: 10px;
   border: 2px solid var(--petroleo);
   padding: 10px;
+  text-align: center;
 }
 
 h2, h3{
@@ -104,14 +113,12 @@ img {
   margin-bottom: 0.8rem;
   font-size:1rem;
   font-weight: 100;
-  background-color:#181823;
-  color: #1fba70;
+  background-color:var(--negro);
+  color: var(--petroleo);
   text-align: center;
   padding: 10px;
   }
   
- 
-
 
   /*pie de pagina*/
   footer {
@@ -133,7 +140,6 @@ footer p {
   font-family: "poppins", "sans serif";
   font-size: 0.8rem;
   text-align: left;
-
   margin: 5px;
   color: var(--petroleo); 
 }
@@ -150,15 +156,22 @@ footer p {
     align-items: start; 
   }
   
-  
+  p{
+    margin-top: 3rem;
+    text-align:center;
+    line-height: 2rem;
+  }
   .seccion-1,
   .seccion-2,
   .seccion-3 {
     grid-row: span 1; 
+    justify-content: stretch;
+    align-self: stretch;
   }
 .seccion-3{
   background-color: var(--negro);
   height: auto;
+
 }
   /* Estilos para la sección 4 cuando el contenedor es un grid */
   .seccion-4 {
